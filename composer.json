@@ -1,5 +1,16 @@
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/cmosguy/backup-manager"
+        }
+
+    ],
     "require": {
-        "heybigname/backup-manager": "0.3.*"
+        "heybigname/backup-manager": "dev-laravel5",
+        "league/flysystem-aws-s3-v2": "~1.0",
+        "league/flysystem-dropbox": "~1.0",
+        "league/flysystem-rackspace": "~1.0@dev",
+        "league/flysystem-sftp": "~1.0@dev"
     }
 }
