@@ -7,8 +7,8 @@ use October\Rain\Database\Updates\Seeder;
 class CreateConfig extends Seeder {
     public function run()
     {
-        Artisan::call('config:publish heybigname/backup-manager', [
-            'path' => 'vendor/heybigname/backup-manager/config',
+        Artisan::call('vendor:publish', [
+            'provider' => 'BigName\BackupManager\Integrations\Laravel\BackupManagerServiceProviderLaravel5',
         ]);
     }
 
