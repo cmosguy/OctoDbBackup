@@ -1,1 +1,4 @@
 1.0.1: First version of OctoDbBackup
+1.0.2:
+    - Create config file
+    - create_config.php

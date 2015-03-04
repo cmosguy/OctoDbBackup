@@ -21,13 +21,12 @@ class Plugin extends PluginBase
             'name'        => 'OctoDbBackup',
             'description' => 'Back up your databases',
             'author'      => 'Cmosguy',
-            'icon'        => 'icon-leaf'
+            'icon'        => 'icon-cloud-upload'
         ];
     }
 
     public function boot()
     {
-        //App::register('\Cmosguy\OctoDbBackup\BackupManagerServiceProvider');
         App::register('\BigName\BackupManager\Integrations\Laravel\BackupManagerServiceProviderLaravel5');
     }
 
